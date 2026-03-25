@@ -46,30 +46,4 @@ AI-powered staff rostering system with automated scheduling, manual assignment, 
 
 ---
 
-## ⚙️ Installation
-
-### Backend
-```bash
-cd app
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-uvicorn main:app --reload
----
-
-## 🌐 API Endpoints
-
-- `/generate-schedule` → Generate automatic shift schedule  
-- `/assignments` → Get all assigned shifts / create assignment  
-- `/uncovered-shifts` → Get shifts without assigned employees  
-- `/employees` → Manage employee data  
-- `/wards` → Manage ward data
-
----
-
-## Author
-
-Arun Shaji
-
----
 
