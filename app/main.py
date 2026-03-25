@@ -14,7 +14,7 @@ from app.routes import ward as ward_routes
 
 app = FastAPI()
 
-# 🔥 CORS MUST BE HERE
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
