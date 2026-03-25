@@ -54,4 +54,18 @@ cd app
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
+## 🌐 API Endpoints
+
+- `/generate-schedule` → Generate automatic shift schedule  
+- `/assignments` → Get all assigned shifts / create assignment  
+- `/uncovered-shifts` → Get shifts without assigned employees  
+- `/employees` → Manage employee data  
+- `/wards` → Manage ward data
+
+## Author
+
+Arun Shaji
+
+
 uvicorn main:app --reload
