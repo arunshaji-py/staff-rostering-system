@@ -40,7 +40,7 @@ def generate_schedule(employees, shifts, availability):
         for s in range(num_shifts):
             x[(e, s)] = model.NewBoolVar(f"x_{e}_{s}")
 
-    # 🔥 AVAILABILITY + WARD CONSTRAINT (FIXED)
+    # 🔥 AVAILABILITY + WARD CONSTRAINT 
     for e in range(num_employees):
         emp_id = employees[e]["id"]
 
