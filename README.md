@@ -54,6 +54,8 @@ cd app
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+uvicorn main:app --reload
+---
 
 ## 🌐 API Endpoints
 
@@ -63,9 +65,11 @@ pip install -r requirements.txt
 - `/employees` → Manage employee data  
 - `/wards` → Manage ward data
 
+---
+
 ## Author
 
 Arun Shaji
 
+---
 
-uvicorn main:app --reload
