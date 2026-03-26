@@ -10,6 +10,7 @@ from app.routes import auth
 from app.database.db import engine, Base
 from app.models import employee, assignment, availability, shift
 from app.routes import ward as ward_routes
+from app.routes import availability as availability_routes
 
 
 app = FastAPI()
@@ -33,3 +34,4 @@ app.include_router(shift_routes.router)
 app.include_router(scheduler_routes.router)
 app.include_router(auth.router)
 app.include_router(ward_routes.router)
+app.include_router(availability_routes.router)

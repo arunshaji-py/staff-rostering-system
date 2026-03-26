@@ -26,7 +26,8 @@ def create_employee(
     new_employee = Employee(
         name=employee.name,
         skill=employee.skill,
-        max_hours=employee.max_hours
+        max_hours=employee.max_hours,
+        gender=employee.gender,
     )
 
     db.add(new_employee)

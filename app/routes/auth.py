@@ -31,5 +31,8 @@ def login(username: str, db: Session = Depends(get_db)):
 
     return {
         "access_token": token,
-        "role": "admin" if user.name == "Arun" else "employee"
+        "role": "admin" if user.name == "Arun" else "employee",
+        "user_id": user.employee_id,
+        "name": user.name,
+        "gender": user.gender,
     }

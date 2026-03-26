@@ -5,3 +5,4 @@ class EmployeeCreate(BaseModel):
     name: str
     skill: str
     max_hours: int
+    gender: str
